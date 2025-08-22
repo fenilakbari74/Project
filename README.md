@@ -1,2 +1,2 @@
 # Project
-Create mini project
+Create mini project on lenskart.com.
