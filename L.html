@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lenskart.com - Eyewear Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Lenskart.com</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Lenskart.com</h1>
+            <p>Shop the latest eyewear trends - glasses, sunglasses, and more!</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="https://img.lenskart.com/catalog/product/1/1.jpg" alt="Classic Eyeglasses">
+                <h3>Classic Eyeglasses</h3>
+                <p>Stylish and comfortable eyeglasses for everyday use.</p>
+                <div class="price">₹999</div>
+                <button onclick="addToCart('Classic Eyeglasses')">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="https://img.lenskart.com/catalog/product/2/2.jpg" alt="Aviator Sunglasses">
+                <h3>Aviator Sunglasses</h3>
+                <p>UV protection with trendy aviator style.</p>
+                <div class="price">₹1499</div>
+                <button onclick="addToCart('Aviator Sunglasses')">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="https://img.lenskart.com/catalog/product/3/3.jpg" alt="Round Glasses">
+                <h3>Round Glasses</h3>
+                <p>Elegant round frames for a classic look.</p>
+                <div class="price">₹1299</div>
+                <button onclick="addToCart('Round Glasses')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Lenskart.com is India’s leading online eyewear store, bringing you the latest in eyeglasses, sunglasses, and contact lenses. Our mission is to help you see better and look better. Fast delivery, easy returns, and world-class customer service!
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@lenskart.com | Phone: +91-98765-43210</p>
+        <form>
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <textarea placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Cart Popup -->
+    <div id="cartPopup" class="cart-popup">
+        <h3>Your Cart</h3>
+        <ul id="cartItems"></ul>
+        <button onclick="closeCart()">Close</button>
+    </div>
+
+    <footer>
+        &copy; 2025 Lenskart.com. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
